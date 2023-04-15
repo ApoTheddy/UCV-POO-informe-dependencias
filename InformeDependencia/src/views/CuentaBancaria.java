@@ -1,13 +1,10 @@
 package views;
 
-import client.Address;
 import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import services.ApiJsonPlaceholder;
 import client.Client;
-import client.Company;
-import client.Geo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import javax.swing.JOptionPane;
