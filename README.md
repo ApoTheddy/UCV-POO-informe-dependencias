@@ -1,4 +1,4 @@
-<h4> Bienvenidos, Aqui estaremos adjuntando lo que vallamos avanzando del informe de dependencias </h4>
+<h4> Bienvenidos, Aqui estaremos adjuntando lo que vayamos avanzando del informe de dependencias </h4>
 
 ![](https://i.blogs.es/53044d/java/1366_521.jpg)
 
@@ -148,4 +148,31 @@ entonces si modificamos alguna de estas dos clases, la clase 'Client' tambien se
 afectada, por otro lado la clase 'Address' depende de otra clase, llamada 'Geo', la cual es 
 una clase independiente ya que no necesita de otra clase creada por nosotros, ya que 
 cualquier clase que creamos es dependiente de la super clase llamada 'Object'
+```
+
+Veamos otro ejemplo con una aplicación cotidiana dentro de los minimarkets
+
+```mermaid
+classDiagram
+
+class Pedido {
+  +idPedido: int
+  +fecha: Date
+  +cantidad: int
+  +total: float
+
+  +calcularTotal(): float
+}
+
+class Producto {
+  +idProducto: int
+  +nombre: String
+  +precio: float
+}
+
+Pedido --|> Producto
+```
+
+```
+Gracias a este gráfico, podemos darnos cuenta de que la clase Pedido depende directamente de la clase Producto, esto es debido a que la clase Pedido utiliza la información de la clase Producto para poder calcular el total de la orden. En este ejemplo, la clase Producto no depende de la clase Pedido para poder funcionar, por lo que no hay una flecha que apunte hacia la clase Pedido. La dependencia solo va en una dirección, desde la clase que depende hacia la clase que es necesaria para su funcionamiento.
 ```
