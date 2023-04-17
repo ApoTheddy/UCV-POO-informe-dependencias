@@ -1,6 +1,6 @@
 package services;
 
-import client.Client;
+import models.Client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
