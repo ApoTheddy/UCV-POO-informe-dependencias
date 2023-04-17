@@ -1,4 +1,4 @@
-<h4> Bienvenidos, Aqui estaremos adjuntando lo que vayamos avanzando del informe de dependencias </h4>
+<h4> Bienvenidos, aquí estaremos adjuntando lo que se vaya avanzando del informe de dependencias </h4>
 
 ![](https://i.blogs.es/53044d/java/1366_521.jpg)
 
@@ -174,5 +174,10 @@ Pedido --|> Producto
 ```
 
 ```
-Gracias a este gráfico, podemos darnos cuenta de que la clase Pedido depende directamente de la clase Producto, esto es debido a que la clase Pedido utiliza la información de la clase Producto para poder calcular el total de la orden. En este ejemplo, la clase Producto no depende de la clase Pedido para poder funcionar, por lo que no hay una flecha que apunte hacia la clase Pedido. La dependencia solo va en una dirección, desde la clase que depende hacia la clase que es necesaria para su funcionamiento.
+Gracias a este gráfico, podemos darnos cuenta de que la clase Pedido depende directamente de 
+la clase Producto, esto es debido a que la clase Pedido utiliza la información de la clase 
+Producto para poder calcular el total de la orden. En este ejemplo, la clase Producto no 
+depende de la clase Pedido para poder funcionar, por lo que no hay una flecha que apunte 
+hacia la clase Pedido. La dependencia solo va en una dirección, desde la clase que depende 
+hacia la clase que es necesaria para su funcionamiento.
 ```
